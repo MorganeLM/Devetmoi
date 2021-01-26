@@ -1,3 +1,150 @@
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+#container{
+    width: 100%;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+header > div > img{
+    height: 80px;
+}
+
+header > nav > ul{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+header > nav > ul > li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+/* Section 1 */
+main > section:nth-child(1){
+    position: relative;
+}
+
+main > section:nth-child(1) > img{
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+main > section:nth-child(1) > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > section:nth-child(1) > div div{
+    width: 70% ;
+}
+
+main > section:nth-child(1) > div img{
+    width: 100% ;
+}
+
+h1{
+    color: white;
+    font-size: 2.2em;
+}
+
+
+/* Section 2 */
+main > section:nth-child(2){
+    padding: 20px 15%;
+}
+
+main > section:nth-child(2)> p:first-child{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.main_bloc{
+    margin: 50px 0;
+}
+
+.main_bloc div{
+    padding: 10px 30px;
+}
+
+.main_bloc div p{
+    font-size: 0.9em;
+}
+
+main > section:nth-child(2) > div{
+    display: flex;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+main > section:nth-child(2)> blockquote{
+    margin: 0 15%;
+    text-align: center;
+}
+
+main > section:nth-child(2)> blockquote > p:last-child{
+    font-weight: 300;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    color: white;
+    background-color: #5b359d;
+    padding-bottom: 40px;
+
+}
+
+footer > div:first-child{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+footer > div:nth-child(2){
+    text-align: center;
+}
+
+footer i{
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+footer > div:last-child{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > div:last-child > section:last-child > p:last-child{
+    padding-left: 20px;
 }
